@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import 'mixins';
+@import 'globals';
+
+
+.todos-box {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 60px;
+  text-align: center;
+  padding: 0rem 1rem;
+}
+
+.todoInput {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #474647;
+  border-radius: 30px;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0px 0px 2px #474647;
+
+  }
+}
+
+#todo-list {
+  margin-top: 1.5rem;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: .5rem 0rem;
+  }
+}
+
+.deleteTodo {
+  display: inline;
+  background: none;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+
+}
+
+.task {
+  label {
+    cursor: pointer;
+  }
+}

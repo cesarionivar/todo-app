@@ -1,0 +1,48 @@
+*,
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  min-height: 100%;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+a {
+  display: block;
+  margin: 1rem .5rem;
+  padding: .5rem;
+  background-color: #d22d3b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+a:hover,
+.select {
+  opacity: .7;
+}
+
+.hidden {
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+input:checked > label {
+  text-decoration: line-through;
+}
